@@ -1,1 +1,37 @@
-Calculator
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate</title>
+    <script src="./scripts/payment_calculator.js"></script>
+    <script src="./scripts/main.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <h1>Calculate</h1>
+    <div class="example">
+        Example: A $53,000 loan at 7.625% interest for 15 years would have a $495.09/mo
+    </div>
+    <br>
+    <label>
+        <div class="input-label"> Amount: </div><input id="amount" type="number" value="53000">
+    </label>
+    <label>
+        <div class="input-label"> Rate: </div><input id="rate" type="number" value="7.625">
+    </label>
+    <label>
+        <div class="input-label"> Years: </div><input id="years" type="number" value="15">
+    </label>
+    <br>
+    <button id="calculateButton"> Calculate </button>
+    <h1>Result:</h1>
+    <input readonly id="output">
+    <!-- <div id="output"> $0,000.00 </div>
+     -->
+</body>
+
+
+</html>
